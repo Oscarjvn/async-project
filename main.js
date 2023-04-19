@@ -1,4 +1,4 @@
-const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCwbg5tooaBpA2EYqjUpa0zw&part=snippet%2Cid&order=date&maxResults=3'
+const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCwbg5tooaBpA2EYqjUpa0zw&part=snippet%2Cid&order=date&maxResults=9'
 
 
 const options = {
@@ -48,7 +48,7 @@ async function fetchData(urlApi, op){
   //contenedor.appendChild(div)
   
     } catch (error) {
-        console.log(error)
+        contenedor.textContent = "Algo ha ido mal, quedate con nostros enseguida lo solucionamos"
     }
    
 })()
